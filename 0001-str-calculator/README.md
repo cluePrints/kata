@@ -19,4 +19,6 @@ Hints:
  - Remember to solve things as simply as possible so that you force yourself to write tests you did not think about
  - Remember to refactor after each passing test
 
+2. Allow the Add method to handle an unknown amount of numbers
+
 Thanks - Roy Osherove
