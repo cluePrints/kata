@@ -2,10 +2,11 @@ def str_to_int_list(str):
     lst = []
     collect = ""
     for i in str:
-        if i != ",":
+        if i in {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}:
             collect += i
-        if i == ",":
-            lst.append(collect)
+        else:
+            if len(collect) > 0:
+                lst.append(collect)
             collect = ""
     lst.append(collect)
     return lst

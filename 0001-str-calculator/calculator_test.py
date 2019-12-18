@@ -17,6 +17,9 @@ class Test(unittest.TestCase):
         self.assertEquals(25, add("3,4,5,13"))
         self.assertEquals(28, add("3,4,5,13,3"))
 
+    def test_for_passing_other_symbols(self):
+        self.assertEquals(6, add("1/n2,3"))
+
 
 if __name__ == "__main__":
     unittest.main()
