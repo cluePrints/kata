@@ -12,6 +12,11 @@ class Test(unittest.TestCase):
     def test_return_one_number(self):
         self.assertEquals(2, add("2"))
 
+    def test_return_anknown_amount_of_numbers(self):
+        self.assertEquals(12, add("3,4,5"))
+        self.assertEquals(25, add("3,4,5,13"))
+        self.assertEquals(28, add("3,4,5,13,3"))
+
 
 if __name__ == "__main__":
     unittest.main()
