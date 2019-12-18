@@ -18,9 +18,9 @@ class Test(unittest.TestCase):
         self.assertEquals(28, add("3,4,5,13,3"))
 
     def test_for_passing_other_symbols(self):
-        self.assertEquals(6, add("1/n2,3"))
+        self.assertEquals(6, add("1\n2,3"))
         self.assertEquals(3, add("//;\n1;2"))
-
+    def Test_negative_return("negativies not alloud) 
 
 if __name__ == "__main__":
     unittest.main()
